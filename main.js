@@ -178,3 +178,17 @@ console.log(getTotal(2, 3));
 	console.log(person.getName());
 
 }());
+
+// introduction to classes
+class Person {
+	constructor (name) {
+		this.name = name;
+	}
+
+	sayName () {
+		console.log("My name is " + this.name);
+	}
+}
+
+let peter = new Person("Peter");
+console.log(peter.sayName());
