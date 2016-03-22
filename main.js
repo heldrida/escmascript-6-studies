@@ -66,3 +66,16 @@ function myFuncLetTestD () {
 
 //myFuncLetTestC();
 myFuncLetTestD();
+
+// the const statement, like `let` is a block-level element, which means that exists
+// only on it's scope and that is not hoisted to the top, not available elsewhere;
+// likewise, the const statement does not allow redeclarations, and as in other languages
+// a constant is immutable, when initialised a value needs to be declared immediately.
+function myFuncConstTestA () {
+	const foo = 1;
+	console.log("typeof foo: ", typeof foo);
+	//const bar;
+	// SyntaxError: missing = in const declaration
+}
+
+myFuncConstTestA();
