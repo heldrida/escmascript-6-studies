@@ -134,3 +134,14 @@ function myFuncConstTestB () {
 	console.log('text', text);
 
 }());
+
+// default parameter values in ecmascript6
+function myFunDefParams (param1, param2 = "foo", param3 = function () { console.log("callback"); }) {
+
+	console.log("param1", param1);
+	console.log("param2", param2);
+	console.log("param3", param3);
+
+}
+
+myFunDefParams();
