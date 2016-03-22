@@ -145,3 +145,12 @@ function myFunDefParams (param1, param2 = "foo", param3 = function () { console.
 }
 
 myFunDefParams();
+
+// the spread operator `...` the js engine splits the array into individual arguments
+(function () {
+
+	const values = [10, 320, 50, 23, 6, 9];
+
+	console.log(Math.max(...values));
+
+}());
