@@ -79,3 +79,23 @@ function myFuncConstTestA () {
 }
 
 myFuncConstTestA();
+
+// although, using const to declare an object (binding), doesn't stop from changing a property
+// the const statement only prevent you from modifying the value it's bound to, that is in this
+// case an object;
+function myFuncConstTestB () {
+	const person = {
+		name: "Lucas"
+	};
+
+	// works
+	person.name = "Richard";
+
+	/*
+	// throws an error
+	person = {
+		name: "Peter"
+	};
+	*/
+
+}
