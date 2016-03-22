@@ -119,3 +119,18 @@ function myFuncConstTestB () {
 	});
 
 }());
+
+// template strings
+// substitution:
+(function () {
+
+	// using the ` char, we're able to access local variables
+	let name = "Bela",
+		msg = `Hello, ${name}`;
+
+	// or any javascript expression for that mather
+	let text = `${name} has a total of $${(5 * 100 / 2).toFixed(2)}.`;
+
+	console.log('text', text);
+
+}());
