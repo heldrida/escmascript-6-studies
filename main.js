@@ -99,3 +99,23 @@ function myFuncConstTestB () {
 	*/
 
 }
+
+// with the new let and const statements,  immediately-invoked function expressions are not needed
+// // to solve scope issues we are used to
+(function () {
+
+	console.log('No need for IIFE example');
+
+	var fns = [];
+
+	for (let i = 0; i < 10; i++) {
+		fns.push(function () {
+			console.log(i);
+		});
+	}
+
+	fns.forEach(function (fn) {
+		fn();
+	});
+
+}());
