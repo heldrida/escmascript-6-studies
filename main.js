@@ -154,3 +154,10 @@ myFunDefParams();
 	console.log(Math.max(...values));
 
 }());
+
+// Arrow function syntax
+var getName = () => "Nicholas";
+var getTotal = (a, b) => a + b;
+
+console.log(getName());
+console.log(getTotal(2, 3));
