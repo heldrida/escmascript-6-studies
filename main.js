@@ -161,3 +161,20 @@ var getTotal = (a, b) => a + b;
 
 console.log(getName());
 console.log(getTotal(2, 3));
+
+// creating immediately invoked function expressions with arrow functions
+(function () {
+
+	let person = ((name) => {
+
+		return {
+			getName: function () {
+				return name;
+			}
+		};
+
+	})("Nicholas");
+
+	console.log(person.getName());
+
+}());
