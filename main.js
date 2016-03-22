@@ -192,3 +192,23 @@ class Person {
 
 let peter = new Person("Peter");
 console.log(peter.sayName());
+
+// extends
+class Rectangle {
+	constructor (w, l) {
+		this.width = w;
+		this.length = l;
+	}
+	getArea () {
+		return this.width * this.length;
+	}
+}
+
+class Square extends Rectangle {
+	constructor (length) {
+		super(length, length);
+	}
+}
+
+var square = new Square(2);
+console.log(square.getArea());
